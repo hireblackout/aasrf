@@ -1,0 +1,55 @@
+# AASRF Configuration File
+
+# Target system configuration
+target:
+  url: http://localhost:18789
+  auth_token: ""  # Optional authentication token
+  timeout: 30
+
+# Testing configuration
+testing:
+  # Run aggressive tests (may be more intrusive)
+  aggressive: false
+  
+  # Delay between tests (seconds)
+  delay_between_tests: 2
+  
+  # Maximum concurrent tests
+  max_concurrent: 5
+  
+  # Continue on error
+  continue_on_error: true
+
+# Test selection
+test_suites:
+  basic:
+    - prompt_injection
+    - supply_chain
+  
+  full:
+    - prompt_injection
+    - supply_chain
+    - data_exfiltration
+    - defense_validation
+  
+  custom:
+    - prompt_injection
+
+# Reporting configuration
+reporting:
+  # Output format: html, json, both
+  format: html
+  
+  # Verbose output
+  verbose: true
+  
+  # Include evidence
+  include_evidence: true
+  
+  # Output directory
+  output_dir: ./reports
+
+# Logging configuration
+logging:
+  level: INFO
+  file: aasrf.log
