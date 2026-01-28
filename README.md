@@ -66,12 +66,48 @@ See [INSTALL.md](INSTALL.md) for detailed setup instructions.
 
 See [USAGE.md](USAGE.md) for comprehensive examples.
 
+## Testing Modules
+
+### 1. Prompt Injection (15 vectors)
+- Direct command injection
+- Role hijacking
+- Context escape
+- Encoded injection (Base64/Unicode)
+- Multi-step injection
+- Jailbreak via email
+- Tool chaining attacks
+- Memory poisoning
+
+### 2. Supply Chain (5 vectors)
+- Malicious skill installation
+- Dependency confusion
+- Extension verification bypass
+- Remote code loading
+- Permission escalation
+
+### 3. Data Exfiltration (8 vectors)
+- Browser credential theft
+- SSH key extraction
+- Environment variable disclosure
+- Screenshot capture
+- Clipboard monitoring
+- Cryptocurrency wallet theft
+- Session token hijacking
+- Email exfiltration
+
 ## Legal & Ethical Guidelines
 
 1. **Authorization Required**: Only test systems you own or have written permission to test
 2. **No Harm**: Do not cause damage or disruption
 3. **Responsible Disclosure**: Report findings to vendors responsibly
 4. **Compliance**: Follow all applicable laws and regulations
+
+## References
+
+- [Trend Micro - Evelyn Stealer Analysis](https://www.trendmicro.com/en_us/research/26/a/analysis-of-the-evelyn-stealer-campaign.html)
+- [Koi.ai - VS Code Malware Research](https://www.koi.ai/blog/the-vs-code-malware-that-captures-your-screen)
+- [Snyk - ClawdBot Security Analysis](https://snyk.io/articles/clawdbot-ai-assistant/)
+- OWASP LLM Top 10
 
 ## Contributing
 
@@ -81,8 +117,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 MIT License - See [LICENSE](LICENSE)
 
-## References
+---
 
-- Snyk ClawdBot Security Analysis
-- Trend Micro Evelyn Stealer Research
-- OWASP LLM Top 10
+**⚡ For authorized security research only. Use responsibly and legally.**
