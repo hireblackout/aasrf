@@ -47,22 +47,3 @@ python aasrf.py --check-deps
 docker build -t aasrf:latest .
 docker run -it aasrf:latest --help
 ```
-
-## Troubleshooting
-
-### Issue: ModuleNotFoundError
-
-```bash
-pip install --upgrade pip
-pip install -r requirements.txt --force-reinstall
-```
-
-### Issue: Permission Denied
-
-```bash
-chmod +x aasrf.py
-```
-
-### Issue: SSL Certificate Errors
-
-Edit config.yaml and set `verify_ssl: false` (not recommended for production)
